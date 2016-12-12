@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Friends CGI DEMO(static)</title>
+  </head>
+  <body>
+    <h1>Friends list for: <i>New User</i></h1>
+    <form action="/cgi-bin/friendsA.py">
+      <div class="username">
+        <b>Enter your name: </b>
+        <input type="text" name="person" size="15" placeholder="user name">
+      </div>
+      <div class="howmany">
+        <b>How many friends do you have? </b>
+        <input type="radio" name="howmany" value="0" checked> 0
+        <input type="radio" name="howmany" value="10"> 10
+        <input type="radio" name="howmany" value="25"> 25
+        <input type="radio" name="howmany" value="50"> 50
+        <input type="radio" name="howmany" value="100"> 100
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
